@@ -1,0 +1,23 @@
+<div class="simulation-results">
+  <mat-card class="example-card1">
+    <div *ngIf="!dataService.isLoading; else spinnerBlock">
+      <h1>Simulation Results</h1>
+      <div *ngIf="simulationResults">
+        <p>Total Simulations: {{ dataService.getTotal() }}</p>
+        <p>Win Count: {{ dataService.getWinCount() }}</p>
+        <p>Win Percentage: {{ (dataService.getWinCount() / dataService.getTotal()) * 100 | number: '1.2-2' }}%</p>
+      </div>
+      <div *ngIf="!simulationResults">
+        <p>No results available.</p>
+      </div>
+    </div>
+
+    <ng-template #spinnerBlock>
+      <mat-spinner></mat-spinner>
+    </ng-template>
+  </mat-card>
+
+  <div class="button-container">
+    <button mat-raised-button color="primary" (click)="goBack()">Go back for another Simulation</button>
+  </div>
+</div>

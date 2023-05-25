@@ -1,0 +1,61 @@
+<mat-drawer-container class="example-container" autosize>
+
+  <mat-drawer #drawer [opened]="isDrawerOpen" class="example-sidenav" mode="side" position="end">
+    <app-simulation-results></app-simulation-results>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+
+    <mat-card class="example-card">
+      <mat-card-header class="center">
+        <mat-card-title >The Monty Hall Problem</mat-card-title>   
+         <mat-card-subtitle >The Monty Hall is a brain teaser, in the form of a probability puzzle. The question is
+          whether the chances of winning increase if the player changes the door </mat-card-subtitle>
+      </mat-card-header>
+      <br>
+      <img mat-card-image src="assets/monty.png" alt="">
+
+      <mat-card-content>
+        <form [formGroup]="simulationForm" (ngSubmit)="startSimulation()">
+
+          <table class="table" cellspacing="1">
+            <tr>
+              <td>
+                <div>
+                  Enter the Number of Simulations:</div>
+              </td>
+
+              <td>
+                <mat-form-field class="reduce-width" width="20%">
+                  <mat-label></mat-label>
+                  <input type="number" matInput formControlName="numSimulations" min="0" width="20%">
+                  <mat-error
+                    *ngIf="simulationForm.controls['numSimulations'].invalid && simulationForm.controls['numSimulations'].touched">
+                    Number of simulations is should be positive and required.
+                  </mat-error>
+                </mat-form-field>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div>
+                  choose whether to change the door:
+                </div>
+              </td>
+
+              <td>
+                <mat-checkbox id="changeDoor" formControlName="changeDoor"></mat-checkbox>
+              </td>
+            </tr>
+          </table>
+          <br>
+          <div class="button-container">
+            <button type="submit" mat-raised-button color="primary">Start Simulation</button>
+          </div>
+        </form>
+      </mat-card-content>
+
+    </mat-card>
+  </div>
+
+</mat-drawer-container>
