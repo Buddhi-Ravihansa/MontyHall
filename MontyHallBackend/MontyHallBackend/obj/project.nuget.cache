@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "yfzEi+w+F6fmWlrnDA2WWF/4p4hgfiaOcA/9h3MBhp0wB/3opq5HTj+Zjqvcz7BLv3FiJAmvVMZ4UQ9Tn9bdnQ==",
+  "success": true,
+  "projectFilePath": "E:\\MontyHallSimulation\\MontyHallBackend\\MontyHallBackend\\MontyHallBackend.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Buddhi\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Buddhi\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Buddhi\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\Buddhi\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\Buddhi\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\Buddhi\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
