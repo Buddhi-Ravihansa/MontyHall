@@ -4,3 +4,11 @@ The Monty Hall is a brain teaser, in the form of a probability puzzle,loosely ba
 The concept of the game is that the player sees three closed doors - behind one is a car, and behind the other two are goats. The game starts with the player getting to choose a door, without opening it. Then the presenter opens one of the two remaining doors (but never the one with the car) and shows that this door does not contain profit. The player is then given another choice to change the door.
 
 The question is whether the chances of winning increase if the player changes the door.
+
+I implemented application for solve this question.
+
+This web application's backend is tested manually using Postman tool and front end is tested using unit tests.
+
+
+![Screenshot (56)](https://github.com/Buddhi-Ravihansa/MontyHall/assets/68497399/8bff7013-6eab-4058-9ac6-8aa9ede774c3)
+![Screenshot (57)](https://github.com/Buddhi-Ravihansa/MontyHall/assets/68497399/f1b9552a-8fec-4e0d-9b8c-345916d20ae5)
